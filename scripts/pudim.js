@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-async function run() {
+async function scrapePudim() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto('http://pudim.com.br/');
@@ -9,4 +9,4 @@ async function run() {
   await browser.close();
 }
 
-run();
+scrapePudim();
